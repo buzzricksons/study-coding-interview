@@ -1,4 +1,4 @@
-package leetcode.easy;
+package easy;
 
 import java.util.Arrays;
 
@@ -7,12 +7,6 @@ public class Solution1 {
         //array: [0, 1, 2, 3, 4, 4, 4]
         //i: 5
         System.out.println("i: "+removeDuplicates(new int[]{0,1,2,2,3,4,4 }));
-
-
-
-
-
-
     }
 
     //Remove Duplicates from Sorted Array
@@ -26,12 +20,4 @@ public class Solution1 {
         System.out.println("array: "+Arrays.toString(nums));
         return i;
     }
-
-
-    //Rotate Array
-    public static void rotate(int[] nums, int k) {
-
-
-    }
-
 }
