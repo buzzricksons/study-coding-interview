@@ -1,4 +1,4 @@
-package questions.easy;
+package category.topinterviewquestions.easy;
 
 import java.util.Arrays;
 
