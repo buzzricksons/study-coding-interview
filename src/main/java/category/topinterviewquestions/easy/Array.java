@@ -4,9 +4,11 @@ import java.util.Arrays;
 
 public class Array {
     public static void main(String[] args) {
-        //array: [0, 1, 2, 3, 4, 4, 4]
         //i: 5
-        System.out.println("i: "+removeDuplicates(new int[]{0,1,2,2,3,4,4 }));
+        int[] param = new int[]{0,1,2,2,3,4,4 };
+        System.out.println("i: "+removeDuplicatesAnswer(param));
+        System.out.println("i: "+removeDuplicatesByMe(param));
+
 
 
 
@@ -15,23 +17,71 @@ public class Array {
 
     }
 
-    //Remove Duplicates from Sorted Array
-    public static int removeDuplicates(int[] nums) {
-        int i = nums.length > 0 ? 1 : 0;
+    //Remove Duplicates from Sorted Array------------------------------------------
+    //O(n)
+    public static int removeDuplicatesAnswer(int[] nums) {
+        int total = nums.length > 0 ? 1 : 0;
         for (int n : nums) {
-            if (n > nums[i - 1]) {
-                nums[i++] = n;
+            if (n > nums[total - 1]) {
+                nums[total++] = n;
             }
         }
         System.out.println("array: "+Arrays.toString(nums));
-        return i;
+        return total;
     }
 
+    public static int removeDuplicatesByMe(int[] nums) {
+        int index = 0;
+        int total = nums.length !=0 ? 1 : 0;
+        for(int i : nums) {
+            if (nums[index] < i) {
+                nums[++index] = i;
+                total++;
+            }
+        }
+        System.out.println("array: "+Arrays.toString(nums));
+        return total;
+    }
+    //------------------------------------------------------------------------------------
 
 
 
 
-    //Rotate Array
+
+    //Rotate Array------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public void rotate(int[] nums, int k) {
         k %= nums.length;
         reverse(nums, 0, nums.length - 1);
