@@ -5,10 +5,16 @@ import java.util.Arrays;
 public class Array {
     public static void main(String[] args) {
         //i: 5
-        int[] param = new int[]{0,1,2,2,3,4,4 };
-        System.out.println("i: "+removeDuplicatesAnswer(param));
-        System.out.println("i: "+removeDuplicatesByMe(param));
+//        int[] param = new int[]{0,1,2,2,3,4,4 };
+//        System.out.println("i: "+removeDuplicatesAnswer(param));
+//        System.out.println("i: "+removeDuplicatesByMe(param));
 
+
+        //[7,1,2,3,4,5,6]
+        //[6,7,1,2,3,4,5]
+        //[5,6,7,1,2,3,4]
+        int[] param2 = new int[]{1,2,3,4,5,6,7 };
+        rotateByMe1(param2, 3);
 
 
 
@@ -25,8 +31,8 @@ public class Array {
             if (n > nums[total - 1]) {
                 nums[total++] = n;
             }
-        }
         System.out.println("array: "+Arrays.toString(nums));
+        }
         return total;
     }
 
@@ -50,6 +56,17 @@ public class Array {
 
     //Rotate Array------------------------------------------------------------------------
 
+    public static void rotateByMe1(int[] nums, int k) {
+        int[] result = new int[nums.length];
+        for (int i = 1; i <= k; i++) {
+            for (int j = 0; j < nums.length; j++) {
+                result[j != nums.length -1 ? j + 1 : 0] = nums[j];
+            }
+            nums = result;
+        }
+        System.out.println("array: "+Arrays.toString(result));
+
+    }
 
 
 
