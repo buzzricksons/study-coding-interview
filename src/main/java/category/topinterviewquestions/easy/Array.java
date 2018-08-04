@@ -82,65 +82,25 @@ public class Array {
         System.out.println("array: "+Arrays.toString(nums));
     }
 
-
-    //TODO
     public static void rotateByMe3(int[] nums, int k) {
+        if (k == nums.length) return;
+        if (k > nums.length) {
+            k %= nums.length;
+        }
         int[] result = nums.clone();
-        int length = result.length;
-        if (length >= k) {
-            int kIndex = 0;
-            for (int j = 0; j < length; j++) {
-                if (j + k < length) {
-                    nums[j + k] = result[j];
-                } else {
-                    nums[kIndex++] = result[j];
-                }
+        for (int i = 0, j = 0; i < nums.length; i++) {
+            if (i + k < nums.length) {
+                nums[i + k] = result[i];
+            } else {
+                nums[j++] = result[i];
             }
-        } else {
-            while (length != 0) {
-                int kIndex = 0;
-                for (int j = 0; j < length; j++) {
-                    if (j + k < length) {
-                        nums[j + k] = result[j];
-                    } else {
-                        nums[kIndex++] = result[j];
-                    }
-                }
-                length = k - length;
-            }
-
         }
         System.out.println("array: "+Arrays.toString(nums));
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //From Answer
+    //O(1)
     public void rotate(int[] nums, int k) {
         k %= nums.length;
         reverse(nums, 0, nums.length - 1);
@@ -157,6 +117,23 @@ public class Array {
             end--;
         }
     }
+    //------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
