@@ -57,12 +57,13 @@ public class Array {
     //Rotate Array------------------------------------------------------------------------
 
     public static void rotateByMe1(int[] nums, int k) {
-        int[] result = new int[nums.length];
+        int[] input = nums;
+        int[] result = new int[input.length];
         for (int i = 1; i <= k; i++) {
-            for (int j = 0; j < nums.length; j++) {
-                result[j != nums.length -1 ? j + 1 : 0] = nums[j];
+            for (int j = 0; j < input.length; j++) {
+                result[j != input.length -1 ? j + 1 : 0] = input[j];
             }
-            nums = result;
+            input = result.clone();
         }
         System.out.println("array: "+Arrays.toString(result));
 
