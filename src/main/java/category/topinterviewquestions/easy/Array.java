@@ -14,7 +14,7 @@ public class Array {
         //[6,7,1,2,3,4,5]
         //[5,6,7,1,2,3,4]
         int[] param2 = new int[]{1,2,3,4,5,6,7 };
-        rotateByMe1(param2, 3);
+        rotateByMe3(param2, 3);
 
 
 
@@ -55,22 +55,63 @@ public class Array {
 
 
     //Rotate Array------------------------------------------------------------------------
-
     public static void rotateByMe1(int[] nums, int k) {
-        int[] input = nums;
-        int[] result = new int[input.length];
+        int[] result = new int[nums.length];
         for (int i = 1; i <= k; i++) {
-            for (int j = 0; j < input.length; j++) {
-                result[j != input.length -1 ? j + 1 : 0] = input[j];
+            for (int j = 0; j < nums.length; j++) {
+                result[j != nums.length - 1 ? j + 1 : 0] = nums[j];
             }
-            input = result.clone();
+            nums = result.clone();
         }
-        System.out.println("array: "+Arrays.toString(result));
+        nums = result.clone();
+        System.out.println("array: " + Arrays.toString(nums));
+    }
 
+    public static void rotateByMe2(int[] nums, int k) {
+        int[] result = nums.clone();
+        for (int i = 1; i <= k; i++) {
+            for (int j = 0;j < result.length ;j++) {
+                if (j != result.length - 1) {
+                    nums[j + 1] = result[j];
+                } else {
+                    nums[0] = result[result.length - 1];
+                }
+            }
+            result = nums.clone();
+        }
+        System.out.println("array: "+Arrays.toString(nums));
     }
 
 
+    //TODO
+    public static void rotateByMe3(int[] nums, int k) {
+        int[] result = nums.clone();
+        int length = result.length;
+        if (length >= k) {
+            int kIndex = 0;
+            for (int j = 0; j < length; j++) {
+                if (j + k < length) {
+                    nums[j + k] = result[j];
+                } else {
+                    nums[kIndex++] = result[j];
+                }
+            }
+        } else {
+            while (length != 0) {
+                int kIndex = 0;
+                for (int j = 0; j < length; j++) {
+                    if (j + k < length) {
+                        nums[j + k] = result[j];
+                    } else {
+                        nums[kIndex++] = result[j];
+                    }
+                }
+                length = k - length;
+            }
 
+        }
+        System.out.println("array: "+Arrays.toString(nums));
+    }
 
 
 
