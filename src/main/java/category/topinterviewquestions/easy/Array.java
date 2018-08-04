@@ -1,6 +1,9 @@
 package category.topinterviewquestions.easy;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Array {
     public static void main(String[] args) {
@@ -14,7 +17,7 @@ public class Array {
         //[6,7,1,2,3,4,5]
         //[5,6,7,1,2,3,4]
         int[] param2 = new int[]{1,2,3,4,5,6,7 };
-        rotateByMe3(param2, 3);
+        rotateByMe4(param2, 3);
 
 
 
@@ -63,7 +66,7 @@ public class Array {
             }
             nums = result.clone();
         }
-        nums = result.clone();
+        nums = result;
         System.out.println("array: " + Arrays.toString(nums));
     }
 
@@ -98,14 +101,28 @@ public class Array {
         System.out.println("array: "+Arrays.toString(nums));
     }
 
+    public static void rotateByMe4(int[] nums, int k) {//Java 8
+        List<Integer> temp = Arrays.stream(nums).boxed().collect(Collectors.toList());
+        Collections.rotate(temp, k);
+        nums = temp.stream().mapToInt(Integer::intValue).toArray();
+        System.out.println("array: "+Arrays.toString(nums));
+    }
+
 
     //From Answer
     //O(1)
-    public void rotate(int[] nums, int k) {
+    public void rotate(int[] nums, int k) { // k = 2
         k %= nums.length;
-        reverse(nums, 0, nums.length - 1);
-        reverse(nums, 0, k - 1);
-        reverse(nums, k, nums.length - 1);
+        // {0,1,2,3,4}
+
+        reverse(nums, 0, nums.length - 1); // Reverse the whole Array
+        // {4,3,2,1,0}
+
+        reverse(nums, 0, k - 1); // Reverse first part (4,3 -> 3,4)
+        // {3,4,2,1,0}
+
+        reverse(nums, k, nums.length - 1); //Reverse second part (2,1,0 -> 0,1,2)
+        // {3,4,0,1,2}
     }
 
     public void reverse(int[] nums, int start, int end) {
@@ -117,6 +134,8 @@ public class Array {
             end--;
         }
     }
+
+
     //------------------------------------------------------------------------------------
 
 
