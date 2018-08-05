@@ -16,8 +16,8 @@ public class Array {
         //[7,1,2,3,4,5,6]
         //[6,7,1,2,3,4,5]
         //[5,6,7,1,2,3,4]
-        int[] param2 = new int[]{1,2,3,4,5,6,7 };
-        rotateByMe4(param2, 3);
+        int[] param = new int[]{1,2,3,4,5,6,7 };
+        rotateByMe4(param, 3);
 
 
 
