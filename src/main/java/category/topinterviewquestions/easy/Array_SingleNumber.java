@@ -41,10 +41,8 @@ public class Array_SingleNumber {
 //
 //                = N
         int result = 0;
-        for (int i = 0; i<nums.length; i++) {
-            System.out.println("before> result: "+result+", num: "+nums[i]);
-            result ^= nums[i];
-            System.out.println("after> result: "+result);
+        for (int num : nums) {
+            result ^= num;
         }
         return result;
     }
