@@ -6,6 +6,7 @@ public class String_ReverseString {
 //        Output: "amanaP :lanac a ,nalp a ,nam A"
         String s = "A man, a plan, a canal: Panama";
         System.out.println(reverseStringByMe(s));
+        System.out.println(reverseStringByAnswer(s));
 
     }
 
