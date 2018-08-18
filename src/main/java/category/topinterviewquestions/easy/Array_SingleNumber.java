@@ -3,7 +3,7 @@ package category.topinterviewquestions.easy;
 public class Array_SingleNumber {
     public static void main(String[] args) {
         int[] nums = {2,3,2,1,3};//1
-        System.out.println(singleNumberByAnswer(nums));
+        System.out.println(singleNumberByXOR(nums));
 
 
     }
@@ -24,7 +24,7 @@ public class Array_SingleNumber {
         throw new IllegalArgumentException();
     }
 
-    public static int singleNumberByAnswer(int[] nums) {
+    public static int singleNumberByXOR(int[] nums) {
 //        we use bitwise XOR to solve this problem :
 //
 //        first , we have to know the bitwise XOR in java
@@ -42,10 +42,10 @@ public class Array_SingleNumber {
 //                = N
         int result = 0;
         for (int i = 0; i<nums.length; i++) {
-            result ^=nums[i];
+            System.out.println("before> result: "+result+", num: "+nums[i]);
+            result ^= nums[i];
+            System.out.println("after> result: "+result);
         }
         return result;
     }
-
-
 }
