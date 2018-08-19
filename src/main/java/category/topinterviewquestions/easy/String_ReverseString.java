@@ -7,7 +7,7 @@ public class String_ReverseString {
 
         String s = "A man, a plan, a canal: Panama";
         System.out.println(reverseStringByMe(s));
-        System.out.println(reverseStringByAnswer(s));
+        System.out.println(reverseStringByAnswer1(s));
 
     }
 
@@ -20,7 +20,7 @@ public class String_ReverseString {
         return sb.toString();
     }
 
-    public static String reverseStringByAnswer(String s) {
+    public static String reverseStringByAnswer1(String s) {
         char[] word = s.toCharArray();
         int i = 0;
         int j = s.length() - 1;
@@ -32,5 +32,8 @@ public class String_ReverseString {
             j--;
         }
         return new String(word);
+    }
+    public static String reverseStringByAnswer2(String s) {
+        return new StringBuilder(s).reverse().toString();
     }
 }
