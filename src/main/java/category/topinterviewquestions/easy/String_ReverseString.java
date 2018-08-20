@@ -31,7 +31,7 @@ public class String_ReverseString {
             i++;
             j--;
         }
-        return new String(word);//
+        return new String(word);
     }
     public static String reverseStringByAnswer2(String s) {
         return new StringBuilder(s).reverse().toString();
