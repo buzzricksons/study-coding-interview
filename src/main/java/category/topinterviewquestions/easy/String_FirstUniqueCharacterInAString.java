@@ -2,11 +2,31 @@ package category.topinterviewquestions.easy;
 
 public class String_FirstUniqueCharacterInAString {
     public static void main(String[] args) {
-
+//        s = "leetcode"
+//        return 0.
+//
+//        s = "loveleetcode",
+//        return 2.
+        String s = "aadadaad";
+        System.out.println(firstUniqCharByMe(s));
     }
-    public static int firstUniqChar(String s) {
+    public static int firstUniqCharByMe(String s) {
+        char[] c = s.toCharArray();
+        for (int i = 0; i < c.length; i++) {
+            if (s.indexOf(c[i]) == s.lastIndexOf(c[i])) {
+                return i;
+            }
+        }
+        return -1;
+    }
 
-        return 0;
-
+    public static int firstUniqCharByAnswer(String s) {
+        int freq [] = new int[26];
+        for(int i = 0; i < s.length(); i ++)
+            freq [s.charAt(i) - 'a'] ++;
+        for(int i = 0; i < s.length(); i ++)
+            if(freq [s.charAt(i) - 'a'] == 1)
+                return i;
+        return -1;
     }
 }
