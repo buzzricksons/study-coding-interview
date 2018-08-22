@@ -15,7 +15,7 @@ public class LinkedList_DeleteNodeInALinkedList {
 
     }
 
-    public static void deleteNode(ListNode node) {
+    public static void deleteNodeByMe(ListNode node) {
 
     }
 
