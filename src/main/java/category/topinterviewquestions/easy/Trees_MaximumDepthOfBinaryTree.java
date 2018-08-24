@@ -1,5 +1,7 @@
 package category.topinterviewquestions.easy;
 
+import category.topinterviewquestions.TreeNode;
+
 public class Trees_MaximumDepthOfBinaryTree {
     public static void main(String[] args) {
 
@@ -11,18 +13,5 @@ public class Trees_MaximumDepthOfBinaryTree {
         int leftMax = root.left == null ? 0 : maxDepthByAnswer(root.left);
         int rightMax = root.right == null ? 0 : maxDepthByAnswer(root.right);
         return 1 + Math.max(leftMax, rightMax);
-    }
-
-
-    
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-
     }
 }
