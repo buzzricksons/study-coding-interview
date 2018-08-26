@@ -7,15 +7,15 @@ import java.util.Set;
 
 public class Array_ContainsDuplicate {
     public static void main(String[] args) {
-        int[] param1 = new int[]{1,2,3,1};
-        int[] param2 = new int[]{1,2,3,4};
-        int[] param3 = new int[]{1,1,1,3,3,4,3,2,4,2};
-        List<int[]> param = List.of(param1, param2, param3);
-        param.stream().forEach(p -> {
-            System.out.println(containsDuplicateByMe1(p));
-            System.out.println(containsDuplicateByMe2(p));
-            System.out.println(containsDuplicateByMe3(p));
-        });
+//        int[] param1 = new int[]{1,2,3,1};
+//        int[] param2 = new int[]{1,2,3,4};
+//        int[] param3 = new int[]{1,1,1,3,3,4,3,2,4,2};
+//        List<int[]> param = List.of(param1, param2, param3);
+//        param.stream().forEach(p -> {
+//            System.out.println(containsDuplicateByMe1(p));
+//            System.out.println(containsDuplicateByMe2(p));
+//            System.out.println(containsDuplicateByMe3(p));
+//        });
     }
 
     public static boolean containsDuplicateByMe1(int[] nums) {
