@@ -2,9 +2,11 @@ package category.topinterviewquestions.easy;
 
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
+/**
+ * 배열에 중복된 요소가 있는지 체크
+ */
 public class Array_ContainsDuplicate {
     public static void main(String[] args) {
 //        int[] param1 = new int[]{1,2,3,1};
