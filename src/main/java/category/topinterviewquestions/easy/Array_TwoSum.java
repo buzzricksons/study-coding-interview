@@ -4,6 +4,10 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 배열에서 더했을때 합이 주어진 target이되는 2개의 숫자 구하기
+ *
+ */
 public class Array_TwoSum {
     public static void main(String[] args) {
 //        Given nums = [2, 7, 11, 15], target = 9,

@@ -2,6 +2,10 @@ package category.topinterviewquestions.easy;
 
 import java.util.Stack;
 
+/**
+ * 괄호가 제대로 닫혀있는지 판단한라
+ *
+ */
 public class Others_ValidParentheses {
     public static void main(String[] args) {
 //        Input: "()"

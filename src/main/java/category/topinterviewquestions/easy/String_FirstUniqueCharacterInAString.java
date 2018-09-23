@@ -1,5 +1,9 @@
 package category.topinterviewquestions.easy;
 
+/**
+ * 주어진 문자열에서 요소가 한개밖에 문자중에 첫번째를 구하라
+ *
+ */
 public class String_FirstUniqueCharacterInAString {
     public static void main(String[] args) {
 //        s = "leetcode"

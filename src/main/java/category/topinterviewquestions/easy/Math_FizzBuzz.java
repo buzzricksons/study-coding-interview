@@ -3,6 +3,9 @@ package category.topinterviewquestions.easy;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 주어진 숫자를 1부터 프린팅 하는데 3의 배수는 Fizz, 5의 배수는 Buzz, 15의 배수는 FizzBuzz를 출력
+ */
 public class Math_FizzBuzz {
     public static void main(String[] args) {
         System.out.println(String.join(", ", fizzBuzzByMe(15)));

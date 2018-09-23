@@ -1,5 +1,9 @@
 package category.topinterviewquestions.easy;
 
+/**
+ * 인수로 주어진 숫자보다 작은 소수를 전부 구하기
+ *
+ */
 public class Math_CountPrimes {
     public static void main(String[] args) {
         System.out.println(countPrimesByAnswer(10));

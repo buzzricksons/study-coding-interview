@@ -1,5 +1,9 @@
 package category.topinterviewquestions.easy;
 
+/**
+ * 인티저 숫자를 역으로 변환하라
+ *
+ */
 public class String_ReverseInteger {
     public static void main(String[] args) {
 //        Input: 123

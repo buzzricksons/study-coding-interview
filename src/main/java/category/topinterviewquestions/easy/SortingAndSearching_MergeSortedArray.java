@@ -1,5 +1,9 @@
 package category.topinterviewquestions.easy;
 
+/**
+ * 두개의 배열 병합.
+ *
+ */
 public class SortingAndSearching_MergeSortedArray {
     public static void main(String[] args) {
 //        Input:

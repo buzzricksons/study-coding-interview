@@ -1,5 +1,9 @@
 package category.topinterviewquestions.easy;
 
+/**
+ * 배열에서 한개만 존재하는 숫자찾기. 나머지는 전부 2개씩 들어있음
+ *
+ */
 public class Array_SingleNumber {
     public static void main(String[] args) {
         int[] nums = {2,3,2,1,3};//1

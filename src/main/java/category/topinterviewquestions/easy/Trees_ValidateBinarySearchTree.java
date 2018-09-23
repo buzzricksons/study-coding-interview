@@ -5,6 +5,10 @@ import java.util.stream.IntStream;
 
 import category.topinterviewquestions.TreeNode;
 
+/**
+ * 바이너리 서치 트리가 유효한지를 판단하라
+ *
+ */
 public class Trees_ValidateBinarySearchTree {
     public static void main(String[] args) {
         TreeNode node = TreeNode.of(5

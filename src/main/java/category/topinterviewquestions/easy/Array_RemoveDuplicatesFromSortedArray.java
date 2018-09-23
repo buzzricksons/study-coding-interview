@@ -2,6 +2,10 @@ package category.topinterviewquestions.easy;
 
 import java.util.Arrays;
 
+/**
+ * 오름차순으로 정렬되있는 배열에서 중복된 요소 제거하기
+ *
+ */
 public class Array_RemoveDuplicatesFromSortedArray {
     public static void main(String[] args) {
 //        i: 5

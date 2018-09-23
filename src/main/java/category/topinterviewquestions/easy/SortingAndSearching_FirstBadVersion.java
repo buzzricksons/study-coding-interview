@@ -1,8 +1,19 @@
 package category.topinterviewquestions.easy;
 
+/**
+ * 첫번째 배드 버전을 찾아라.
+ *
+ */
 public class SortingAndSearching_FirstBadVersion {
     public static void main(String[] args) {
-        System.out.println(firstBadVersionByAnswer(2));
+//        Given n = 5, and version = 4 is the first bad version.
+//
+//        call isBadVersion(3) -> false
+//        call isBadVersion(5) -> true
+//        call isBadVersion(4) -> true
+//
+//        Then 4 is the first bad version.
+                System.out.println(firstBadVersionByAnswer(2));
 
     }
 

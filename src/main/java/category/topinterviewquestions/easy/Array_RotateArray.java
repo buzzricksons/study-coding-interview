@@ -5,6 +5,10 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * 배열 k 만큼 회전시키기
+ *
+ */
 public class Array_RotateArray {
     public static void main(String[] args) {
         //[7,1,2,3,4,5,6]

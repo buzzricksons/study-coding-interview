@@ -1,7 +1,10 @@
 package category.topinterviewquestions.easy;
 
 
-
+/**
+ * 0부터 N까지의 연속된 숫자가 들어있는 배열에서 중간에 빠진 숫자를 찾아라
+ *
+ */
 public class Others_MissingNumber {
     public static void main(String[] args) {
 //        Input: [3,0,1]

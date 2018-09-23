@@ -2,6 +2,10 @@ package category.topinterviewquestions.easy;
 
 import category.topinterviewquestions.TreeNode;
 
+/**
+ * 바이너리 트리의 최대 깊이를 구하라
+ *
+ */
 public class Trees_MaximumDepthOfBinaryTree {
     public static void main(String[] args) {
 

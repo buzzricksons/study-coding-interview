@@ -3,7 +3,8 @@ package category.topinterviewquestions.easy;
 import java.util.Arrays;
 
 /**
- * 
+ * 배열에서 0은 전부 뒤로 보내고 실수는 오름차순으로 정렬
+ *
  */
 public class Array_MoveZeroes {
     public static void main(String[] args) {

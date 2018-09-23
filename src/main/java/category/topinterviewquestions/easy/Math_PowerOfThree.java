@@ -1,5 +1,8 @@
 package category.topinterviewquestions.easy;
 
+/**
+ * 3으로 나누었을때 나머지가 0이되는 수인지의 참,거짓
+ */
 public class Math_PowerOfThree {
     public static void main(String[] args) {
         System.out.println(isPowerOfThreeByAnswer1(45));

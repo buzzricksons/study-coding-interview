@@ -2,6 +2,10 @@ package category.topinterviewquestions.easy;
 
 import java.util.Arrays;
 
+/**
+ * 배열을 숫자로 생각해서 1을 더해 배열로 반환
+ *
+ */
 public class Array_PlusOne {
     public static void main(String[] args) {
 //        Input: [1,2,3]
